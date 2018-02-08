@@ -51,6 +51,7 @@ class MainActivity : AppCompatActivity(){
         blinkAnim=AnimationUtils.loadAnimation(this,R.anim.abc_slide_out_top)
         winAudio= MediaPlayer.create(this,R.raw.win)
         loseAudio= MediaPlayer.create(this,R.raw.lose)
+
        //implenting tts is optional
         tts= TextToSpeech(this, TextToSpeech.OnInitListener {
         tts.setLanguage(Locale.US)
